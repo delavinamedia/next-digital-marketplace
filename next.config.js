@@ -10,7 +10,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        // hostname: site link
+        hostname: "digitalhippo-production.up.railway.app",
       },
     ],
   },
