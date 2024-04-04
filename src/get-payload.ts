@@ -49,7 +49,7 @@ export const getPayloadClient = async ({
         //TODO: change email
         fromAddress: "onboarding@resend.dev",
         // fromAddress: process.env.EMAIL as string,
-        fromName: "Digital Marketplace",
+        fromName: "delavinamedia",
       },
       secret: process.env.PAYLOAD_SECRET,
       local: initOptions?.express ? false : true,
