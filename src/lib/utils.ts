@@ -1,5 +1,5 @@
 import { type ClassValue, clsx } from "clsx";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
@@ -17,7 +17,7 @@ export function formatCurrency(
 
   const numericValue = typeof value === "string" ? parseFloat(value) : value;
 
-  return new Intl.NumberFormat("pt-PT", {
+  return new Intl.NumberFormat("de-DE", {
     style: "currency",
     currency,
     notation,
@@ -25,9 +25,9 @@ export function formatCurrency(
   }).format(numericValue);
 }
 
-export function constructMetadata({
-  title = "Digital Marketplace - the marketplace for digital assets",
-  description = "Digital Marketplace is an open-source marketplace for high-quality digital goods.",
+/* export function constructMetadata({
+  title = 'digiprops by delavina',
+  description = "beautifully designed digital props for filmmaking.",
   image = "/thumbnail.jpg",
   icons = "/favicon.ico",
   noIndex = false,
@@ -55,7 +55,7 @@ export function constructMetadata({
       title,
       description,
       images: [image],
-      creator: "@RicardoGEsteves",
+      creator: "@delavinmedia",
     },
     icons,
     // metadataBase: new URL(""),
@@ -66,4 +66,4 @@ export function constructMetadata({
       },
     }),
   };
-}
+} */
