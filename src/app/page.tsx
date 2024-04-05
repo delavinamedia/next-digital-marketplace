@@ -31,37 +31,28 @@ export default function Home() {
       <MaxWidthWrapper>
         <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Empowering Developers, Unleashing{" "}
-            <span className="text-blue-600">Innovation</span>.
+          Der Online-Fundus für qualitativ hochwertige{" "}
+            <span className="text-red-800">digitale Requisiten</span>.
           </h1>
 
           <p className="mt-6 text-lg max-w-prose text-muted-foreground">
-            Welcome to Your Digital Marketplace, the ultimate hub for developers
-            seeking the tools and resources to fuel their creative genius. Dive
-            into a world of innovation, where cutting-edge software products
-            await discovery and opportunity knocks at every click. Join our
-            thriving community of developers and tech enthusiasts. Buy or sell
-            meticulously crafted software creations, collaborate with
-            like-minded minds, and transform your ideas into reality. Discover
-            the perfect asset to boost your workflow or turn your brainchild
-            into the next big thing. At Digital Marketplace, innovation knows no
-            bounds.
+          digital props for modern filmmaking by delavina
           </p>
 
-          <p className="mt-6 text-lg max-w-prose text-muted-foreground">
+{/*           <p className="mt-6 text-lg max-w-prose text-muted-foreground">
             Find your next breakthrough. Find your community. Find it all, right
             here at Digital Marketplace.
-          </p>
+          </p> */}
 
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <Link
               href="/products"
               className={buttonVariants()}
             >
-              Browse Trending
+              Browse Collection
             </Link>
 
-            <Button variant={"ghost"}>Our quality promise &rarr;</Button>
+            <Button variant={"ghost"}>Mehr erfahren &rarr;</Button>
           </div>
         </div>
 
@@ -69,7 +60,7 @@ export default function Home() {
           title="New Product"
           subtitle="something about the product"
           href="/products?sort=recent"
-          query={{ sort: "desc", limit: 4 }}
+          query={{ sort: "desc", limit: 8 }}
         />
       </MaxWidthWrapper>
 
