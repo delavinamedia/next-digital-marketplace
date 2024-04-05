@@ -1,14 +1,15 @@
 import Container from "@/components/Container";
 import SignUp from "@/components/SignUp";
+import { Metadata } from "next";
 
-function SingUpPage() {
-  return (
-    <>
-      <Container>
-        <SignUp />
-      </Container>
-    </>
-  );
+export const metadata: Metadata = {
+  title: 'SignUp',
 }
 
-export default SingUpPage;
+export default function SignUpPage() {
+  return (
+    <Container>
+      <SignUp />
+    </Container>
+  );
+}
