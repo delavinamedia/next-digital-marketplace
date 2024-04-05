@@ -47,7 +47,7 @@ export const getPayloadClient = async ({
       email: {
         transport: transporter,
         //TODO: change email
-        fromAddress: "onboarding@resend.dev",
+        fromAddress: "no-reply@props.delavinamedia.de",
         // fromAddress: process.env.EMAIL as string,
         fromName: "delavinamedia",
       },

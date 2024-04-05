@@ -49,7 +49,7 @@ export const ReceiptEmail = ({
                 src={`${process.env.NEXT_PUBLIC_SERVER_URL}/hippo-email-sent.png`}
                 width="100"
                 height="100"
-                alt="DigitalHippo"
+                alt="delavinamedia"
               />
             </Column>
 
@@ -168,7 +168,7 @@ export const ReceiptEmail = ({
             <Link href="#">Privacy Policy </Link>
           </Text>
           <Text style={footerCopyright}>
-            Copyright © 2023 DigitalHippo Inc. <br />{" "}
+            Copyright © 2024 delavinamedia <br />{" "}
             <Link href="#">All rights reserved</Link>
           </Text>
         </Container>
@@ -184,7 +184,7 @@ export const ReceiptEmailHtml = (props: ReceiptEmailProps) =>
 
 const main = {
   fontFamily: '"Helvetica Neue",Helvetica,Arial,sans-serif',
-  backgroundColor: "#ffffff",
+  backgroundColor: "#fbfbfb",
 };
 
 const resetText = {
