@@ -17,8 +17,8 @@ export const Users: CollectionConfig = {
     verify: {
       generateEmailHTML: ({ token }) => {
         return PrimaryActionEmailHtml({
-          actionLabel: "verify your account",
-          buttonText: "Verify Account",
+          actionLabel: "E-Mail-Adresse bestätigen",
+          buttonText: "E-Mail bestätigen",
           href: `${process.env.NEXT_PUBLIC_SERVER_URL}/verify-email?token=${token}`,
         });
       },
