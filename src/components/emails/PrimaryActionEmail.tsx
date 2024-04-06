@@ -32,17 +32,17 @@ export const EmailTemplate = ({
       <Body style={main}>
         <Container style={container}>
           <Img
-            src={`${process.env.NEXT_PUBLIC_SERVER_URL}/hippo-newsletter-sign-up.png`}
+            src={`${process.env.NEXT_PUBLIC_SERVER_URL}/dogon-300.png`}
             width="150"
             height="150"
             alt="digiprops by delavina"
             style={logo}
           />
-          <Text style={paragraph}>Hi there,</Text>
+          <Text style={paragraph}>Hallo,</Text>
           <Text style={paragraph}>
-            Willkommen zu delavinamedia, der online Fundus für digitale Requisiten. Klick den Button, um {actionLabel} 
+            Willkommen zu delavinamedia, dem online Fundus für digitale Requisiten.
             <br />
-            Welcome to DigitalHippo, the marketplace for high quality digital goods. Use the button below to {actionLabel}.
+            Bitte per Klick die {actionLabel}. Danke!
           </Text>
           <Section style={btnContainer}>
             <Button style={button} href={href}>
@@ -50,15 +50,13 @@ export const EmailTemplate = ({
             </Button>
           </Section>
           <Text style={paragraph}>
-            Best,
+            Beste Grüße,
             <br />
-            the digital props team
+            dein digital props team
           </Text>
           <Hr style={hr} />
           <Text style={footer}>
           Wenn du diese E-Mail nicht angefordert hast, kannst du sie getrost ignorieren.
-          <br />
-          If you did not request this email, you can safely ignore it.
           </Text>
         </Container>
       </Body>
