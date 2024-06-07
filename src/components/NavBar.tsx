@@ -24,11 +24,7 @@ async function NavBar() {
 
               <div className="ml-4 flex lg:ml-0">
                 <Link href="/">
-                  <Image
-                    src="/dogon.png"
-                    alt="Logo"
-                    width={40}
-                    height={40} />
+                <Icons.dogon className="h-9 w-9" />
                   {/* <Icons.logo className="h-10 w-10" /> */}
                 </Link>
               </div>

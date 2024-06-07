@@ -60,11 +60,8 @@ function SignUp() {
   return (
     <>
       <div className="flex flex-col items-center space-y-2 text-center">
-      <Image
-                    src="/dogon.png"
-                    alt="Logo"
-                    width={48}
-                    height={48} />
+      <Icons.dogon className="h-20 w-20" />
+      
         <h1 className="text-2xl font-semibold tracking-tight">
           Create an account
         </h1>
