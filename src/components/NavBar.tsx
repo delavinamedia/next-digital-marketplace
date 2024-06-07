@@ -8,6 +8,7 @@ import { getServerSideUser } from "@/lib/payload-utils/payload-utils";
 import { cookies } from "next/headers";
 import UserAccountNav from "./UserAccountNav";
 import MobileNav from "./MobileNav";
+import Image from "next/image";
 
 async function NavBar() {
   const nextCookies = cookies();
@@ -23,7 +24,12 @@ async function NavBar() {
 
               <div className="ml-4 flex lg:ml-0">
                 <Link href="/">
-                  <Icons.logo className="h-10 w-10" />
+                  <Image
+                    src="/dogon.png"
+                    alt="Logo"
+                    width={40}
+                    height={40} />
+                  {/* <Icons.logo className="h-10 w-10" /> */}
                 </Link>
               </div>
 

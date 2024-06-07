@@ -17,6 +17,7 @@ import {
 import { trpc } from "@/trpc/client";
 import { toast } from "sonner";
 import { useRouter, useSearchParams } from "next/navigation";
+import Image from "next/image";
 
 function SignIn() {
   const searchParams = useSearchParams();
@@ -73,7 +74,11 @@ function SignIn() {
   return (
     <>
       <div className="flex flex-col items-center space-y-2 text-center">
-        <Icons.logo className="h-20 w-20" />
+      <Image
+                    src="/dogon.png"
+                    alt="Logo"
+                    width={48}
+                    height={48} />
         <h1 className="text-2xl font-semibold tracking-tight">
           Sign in to your {isSeller ? "seller" : ""} account
         </h1>
