@@ -17,7 +17,7 @@ import { trpc } from "@/trpc/client";
 import { toast } from "sonner";
 import { ZodError } from "zod";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
+// import Image from "next/image";
 
 function SignUp() {
   const {
@@ -63,7 +63,7 @@ function SignUp() {
       <Icons.dogon className="h-20 w-20" />
       
         <h1 className="text-2xl font-semibold tracking-tight">
-          Create an account
+          Konto erstellen
         </h1>
 
         <Link
