@@ -41,12 +41,9 @@ function SignIn() {
   });
 
   const {
-    mutate: signIn,
-    isLoading,
-    data,
-  } = trpc.auth.signIn.useMutation({
+    mutate: signIn, isLoading } = trpc.auth.signIn.useMutation({
     onSuccess: async () => {
-      toast.success("Signed in successfully");
+      toast.success("Anmeldung erfolgreich");
 
       router.refresh();
 
@@ -64,7 +61,7 @@ function SignIn() {
     },
     onError: (err) => {
       if (err.data?.code === "UNAUTHORIZED") {
-        toast.error("Invalid email or password.");
+        toast.error("Unbekannte Email oder falsches Passwort.");
       }
     },
   });
@@ -103,7 +100,7 @@ function SignIn() {
                 className={cn({
                   "focus-visible:ring-red-500": errors.email,
                 })}
-                placeholder="you@example.com"
+                placeholder="otto.normal@mustermann.de"
               />
               {errors?.email && (
                 <p className="text-sm text-red-500">{errors.email.message}</p>
@@ -111,7 +108,7 @@ function SignIn() {
             </div>
 
             <div className="grid gap-1 py-2">
-              <Label htmlFor="password">Password</Label>
+              <Label htmlFor="password">Passwort</Label>
               <Input
                 {...register("password")}
                 type="password"

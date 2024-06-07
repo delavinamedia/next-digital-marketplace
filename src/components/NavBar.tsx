@@ -38,7 +38,7 @@ async function NavBar() {
                       href="/sign-in"
                       className={buttonVariants({ variant: "ghost" })}
                     >
-                      Sign in
+                      Anmelden
                     </Link>
                   )}
 
@@ -53,7 +53,7 @@ async function NavBar() {
                       href="/sign-up"
                       className={buttonVariants({ variant: "ghost" })}
                     >
-                      Create account
+                      Konto erstellen
                     </Link>
                   )}
 
