@@ -68,7 +68,7 @@ const Cart = () => {
                   <span>Free</span>
                 </div>
                 <div className="flex">
-                  <span className="flex-1">Transaction Fee</span>
+                  <span className="flex-1">Umsatzsteuer</span>
                   <span>{formatCurrency(fee)}</span>
                 </div>
                 <div className="flex">
